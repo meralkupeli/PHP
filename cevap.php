@@ -1,0 +1,53 @@
+<?php
+$veri1=$_GET['Bir'];
+$veri2=$_GET['Iki'];
+$veri3=$_GET['Uc'];
+$veri4=$_GET['Dort'];
+$veri5=$_GET['Bes'];
+$dogru=0;
+$yanlis=0;
+if($veri1=="10")
+{
+	$dogru+=1;
+}
+else
+{
+	$yanlis+=1;
+}
+if($veri2=="1000")
+{
+	$dogru+=1;
+}
+else
+{
+	$yanlis+=1;
+}
+if($veri3=="32")
+{
+	$dogru+=1;
+}
+else
+{
+	$yanlis+=1;
+}
+if($veri4=="40")
+{
+	$dogru+=1;
+}
+else
+{
+	$yanlis+=1;
+}
+if($veri5=="30")
+{
+	$dogru+=1;
+}
+else
+{
+	$yanlis+=1;
+}
+$yuzde=$dogru*20;
+echo "Doğru Sayısı: ".$dogru."<br/>";
+echo "Yanlış Sayısı: ".$yanlis."<br/>";
+echo "Başarı:(%) ".$yuzde."<br/>";
+?>
